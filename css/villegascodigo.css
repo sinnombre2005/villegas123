@@ -1,0 +1,108 @@
+body {
+  font-family: forte;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff9900;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+    animation: rainbow 5s infinite;
+
+}
+.imagen5{
+  position: absolute;
+  top: 110px; 
+  left: 1100px;
+    width: 500px; 
+  height: auto; 
+}  
+
+.imagen6{
+  position: absolute;
+  top: 1000px; 
+  left: 1100px;
+    width: 500px; 
+  height: auto; 
+}  
+
+.section {
+  margin-bottom: 40px;
+      animation: moveLeft .5s infinite alternate;
+
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  background-color: #ff9900;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.section-content {
+  display: flex;
+}
+
+.section-content p {
+  color: #666666;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section-content img {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+   from { opacity:0; }
+   to { opacity:1; }
+}
+
+@keyframes moveLeft{
+  to{
+    transform: translateX(10px);
+  }
+}
+
+@keyframes moveUp{
+  to{
+    transform: translateY(10px);
+  }
+}
+
+@keyframes rainbow {
+  0% { background-color: red; }
+  14% { background-color: orange; }
+  28% { background-color: yellow; }
+  42% { background-color: green; }
+  57% { background-color: blue; }
+  71% { background-color: indigo; }
+  85% { background-color: violet; }
+  100% { background-color: red; }
+}
+.animated {
+   animation-duration:1s; 
+   animation-fill-mode:both; 
+}
+
+.fadeIn {
+   animation-name: fadeIn;
+}
